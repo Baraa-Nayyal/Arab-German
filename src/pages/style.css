@@ -1,0 +1,28 @@
+.bgHero {
+  background-image: url("./../../public/city2.png");
+}
+
+.bgSection {
+  background-image: url("./../../public/city3.png");
+}
+
+.bgSection6 {
+  background-image: url("./../../public/money.png");
+}
+
+.overlay {
+  background: linear-gradient(181.73deg, #50b9c380 1.47%, #fdfcdc 94.11%);
+}
+
+.twoOverlay {
+  background: linear-gradient(
+    180deg,
+    #fdfcdc 2.78%,
+    #50b9c3cc 51.88%,
+    #fdfcdc 95.42%
+  );
+}
+
+.footer {
+  background: linear-gradient(180deg, #219ebc 0%, #219eff 100%);
+}

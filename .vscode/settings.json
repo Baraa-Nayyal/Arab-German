@@ -1,0 +1,110 @@
+{
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#684b01",
+    "activityBar.activeBorder": "#fff",
+    "activityBarBadge.foreground": "#684b01",
+    "activityBarBadge.background": "#fff",
+    "activityBar.foreground": "#fff",
+    "titleBar.activeBackground": "#684b01",
+    "titleBar.activeForeground": "#fff"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoClosingBrackets": "always"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // SCSS
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Vue
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  // Extension: Volar
+  "volar.preview.port": 3000,
+  "volar.completion.preferredTagNameCase": "pascal",
+  // Extension: ESLint
+  "eslint.options": {
+    "rulePaths": [
+      "eslint-internal-rules"
+    ]
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.organizeImports": "never",
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  // Extension: Stylelint
+  "stylelint.packageManager": "pnpm",
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "vue"
+  ],
+  // Extension: Spell Checker
+  "cSpell.words": [
+    "Composables",
+    "Customizer",
+    "flagpack",
+    "Iconify",
+    "psudo",
+    "stylelint",
+    "touchless",
+    "triggerer",
+    "vuetify"
+  ],
+  "todohighlight.isEnable": true,
+  "todohighlight.keywordsPattern": "",
+  "todohighlight.toggleURI": false,
+  "region-marker.languages": {
+    "vue": {
+      "start": "// #region ",
+      "end": "// #endregion"
+    }
+  },
+  // Extension: Comment Anchors
+  // "commentAnchors.tags.list": [
+  //   {
+  //     "tag": "ℹ️",
+  //     "scope": "hidden",
+  //     // This color is taken from "Better Comments" Extension (?)
+  //     "highlightColor": "#3498DB",
+  //     "styleComment": true,
+  //     "isItalic": false,
+  //   },
+  //   {
+  //     "tag": "👉",
+  //     "scope": "file",
+  //     // This color is taken from "Better Comments" Extension (*)
+  //     "highlightColor": "#98C379",
+  //     "styleComment": true,
+  //     "isItalic": false
+  //   },
+  //   {
+  //     "tag": "❗",
+  //     "scope": "hidden",
+  //     // This color is taken from "Better Comments" Extension (*)
+  //     "highlightColor": "#FF2D00",
+  //     "styleComment": true,
+  //     "isItalic": false,
+  //   },
+  // ],
+}
