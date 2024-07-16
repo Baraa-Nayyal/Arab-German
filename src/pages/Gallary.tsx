@@ -11,15 +11,15 @@ const Card = () => {
     <div id="sec8" className="max-w-sm mx-auto z-20 ">
       <div className="bg-[#FDFCDC] shadow-md rounded-lg overflow-hidden">
         <img
-          className="w-full h-48 object-cover"
+          className="w-full h-56 object-cover"
           src="/about3.png"
           alt="Gallery Image"
         />
-        <div className="p-4">
-          <h2 className="text-xl font-semibold mb-2">Title</h2>
-          <p className="text-gray-700 text-base">
-            This is a description of the gallery card. It provides some details
-            about the image shown above.
+        <div className="px-4 mt-1">
+          <p className="text-xl font-semibold my-0">Title</p>
+          <p className="text-gray-700 text-sm mt-0">
+            text text text text text text text text text text text text text
+            text text text text text text text text.
           </p>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Gallary = () => {
       <div className="h-fit max-lg:py-10 lg:h-[100vh] relative flex items-center">
         <div className="twoOverlay h-full w-full absolute z-10"></div>
         <div className="container mx-auto px-4 z-20">
-          <div className="text-center mb-24">
+          <div className="text-center mb-10 mt-24">
             <h1 className="inline">Galerie</h1>
           </div>
           <div>

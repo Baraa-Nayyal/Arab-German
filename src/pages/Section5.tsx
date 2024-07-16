@@ -16,18 +16,16 @@ const Section5 = () => {
     <div id="sec5" className="h-full md:h-[100vh] relative flex items-center">
       <div className="twoOverlay h-full w-full absolute z-10"></div>
       <div className="bgSection bg" />
-      {/*  */}
       <div className="z-20 w-full">
-        <div className="text-center flex flex-col items-center">
-          <h1 className="inline-block my-1">Mitgliedschaft</h1>
+        <div className="text-center flex flex-col items-center my-10">
+          <h1 className="inline-block">Mitgliedschaft</h1>
           <p className="max-w-[900px] mx-10 text-balance">
             Mitglied werden kann jeder ab 16 Jahren (männlich und weiblich), der
             den Prinzipien und Zielen des Vereins zustimmt. Die Mitgliedschaft
             kann schriftlich oder elektronisch beantragt werden.
           </p>
         </div>
-        {/*  */}
-        <div className="flex flex-col md:flex-row gap-4 mx-10 text-center justify-center items-center py-10">
+        <div className="flex flex-col md:flex-row gap-4 mx-10 text-center justify-center items-center">
           <Card
             text="Mitglied werden kann jeder ab 16 Jahren (männlich und weiblich)"
             imageUrl="/sixteen.svg"

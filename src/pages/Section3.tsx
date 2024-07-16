@@ -2,12 +2,15 @@ import "./style.css";
 
 const Section3 = () => {
   return (
-    <div id="sec3" className="h-fit max-lg:py-10 lg:h-[100vh] relative flex items-center">
+    <div
+      id="sec3"
+      className="h-fit max-lg:py-10 lg:h-[100vh] relative flex items-center"
+    >
       <div className="twoOverlay h-full w-full absolute z-10"></div>
       <div className="bgSection bg" />
 
       <div className="container mx-auto px-4 z-20">
-        <div className="text-center">
+        <div className="text-center my-10">
           <h1 className="inline">Unsere Ziele</h1>
           <p>
             ein gemeinnütziger Verein, eingetragen am 3. April 2024 in Würzburg

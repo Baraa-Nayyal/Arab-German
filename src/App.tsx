@@ -5,7 +5,7 @@ import Section3 from "./pages/Section3";
 import Section4 from "./pages/Section4";
 import Section5 from "./pages/Section5";
 import Section6 from "./pages/Section6";
-import Section7 from "./pages/Map";
+import Section7 from "./pages/Section7";
 import Contact from "./pages/Contact";
 import ToastContainer from "./hooks/ToastContainer";
 import Footer from "./pages/Footer";

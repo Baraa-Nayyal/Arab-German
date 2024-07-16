@@ -1,6 +1,6 @@
 const Section6 = () => {
   return (
-    <div className="h-[100vh] relative flex justify-center items-center">
+    <div className="h-[50vh] relative flex justify-center items-center">
       <div className="twoOverlay h-full w-full absolute z-10"></div>
       <div className="bgSection6 bg " />
       <div className="z-20 relative text-center flex flex-col px-10">

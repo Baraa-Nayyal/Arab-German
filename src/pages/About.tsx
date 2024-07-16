@@ -79,7 +79,7 @@ const About = () => {
       {/* <div className=" fixed top-0 -z-[10] bg-cover"></div> */}
       <div className="bg-[#FDFCDC] w-full h-full absolute -z-10"></div>
       <div className="flex justify-center">
-        <h2 className="inline text-center">
+        <h2 className="inline text-center my-10">
           Hier finden Sie Informationen über <br /> uns und unsere Aktivitäten
         </h2>
       </div>

@@ -14,7 +14,7 @@ const Section4 = () => {
   return (
     <div id="sec4" className="h-fit relative text-center">
       <div className="bg-[#FDFCDC] w-full h-full absolute -z-10"></div>
-      <h1 className="inline-block mb-10 mx-2">
+      <h1 className="inline-block my-10 mx-2">
         Diese Ziele werden durch Folgendes erreicht:
       </h1>
       <div className="flex justify-center lg:justify-between flex-wrap items-center gap-4 mx-0 lg:mx-24 pb-10">
