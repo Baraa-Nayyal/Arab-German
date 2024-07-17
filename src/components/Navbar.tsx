@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NavLinks from "./NavLinks";
 
 function Navbar() {
@@ -20,7 +20,7 @@ function Navbar() {
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setBgColor("bg-[#fdfcdc88]"); // Change to your desired background color
+      setBgColor("bg-[#FDFCDC]"); // Change to your desired background color
     } else {
       setBgColor("bg-transparent");
     }
@@ -39,11 +39,13 @@ function Navbar() {
         className={`fixed top-0 z-50 w-full p-6 ${bgColor} transition-colors duration-300`}
       >
         {/* Big Nav */}
-        <div className="hidden lg:flex container mx-auto px-10 gap-x-10 justify-between">
-          <div>
-            <img src="/logo.png" className="w-[250px]" />
-          </div>
-          <div className="flex justify-between items-center gap-10 w-[800px] flex-1 ">
+        <div className="hidden lg:flex container mx-auto px-5 gap-x-10 justify-between">
+          <a href="/">
+            <div>
+              <img src="/logo.png" className="w-[250px]" />
+            </div>
+          </a>
+          <div className="flex justify-between items-center gap-5 xl:gap-12 w-fit">
             <NavLinks mode="navbar" isMobileScreen={isOpen} />
           </div>
         </div>
@@ -56,9 +58,11 @@ function Navbar() {
           >
             {isOpen ? <X /> : <Menu />}
           </button>
-          <div>
-            <img src="/logo.png" className="w-[200px]" />
-          </div>
+          <a href="/">
+            <div>
+              <img src="/logo.png" className="w-[250px]" />
+            </div>
+          </a>
         </div>
 
         {/* ℹ️ Mobile Nav */}

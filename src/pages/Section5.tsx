@@ -13,7 +13,7 @@ const Card = ({ imageUrl, text }: { imageUrl: string; text: string }) => {
 
 const Section5 = () => {
   return (
-    <div id="sec5" className="h-full md:h-[100vh] relative flex items-center">
+    <div id="sec5" className="h-full md:h-[100vh] relative flex items-center py-24">
       <div className="twoOverlay h-full w-full absolute z-10"></div>
       <div className="bgSection bg" />
       <div className="z-20 w-full">

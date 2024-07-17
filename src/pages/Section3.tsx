@@ -10,14 +10,14 @@ const Section3 = () => {
       <div className="bgSection bg" />
 
       <div className="container mx-auto px-4 z-20">
-        <div className="text-center my-10">
+        <div className="text-center mb-10 mt-20">
           <h1 className="inline">Unsere Ziele</h1>
           <p>
             ein gemeinnütziger Verein, eingetragen am 3. April 2024 in Würzburg
             und hat folgende Ziele:
           </p>
         </div>
-        <div className="flex flex-col gap-4 mx-10 text-center lg:flex-row lg:justify-between">
+        <div className="flex flex-col gap-4 mx-10 text-center lg:flex-row lg:justify-between pb-24">
           <p className="transition-all bg-[#fdfcdc70] hover:bg-[#FDFCDC] my-1 font-bold  lg:text-xl p-8 w-full lg:w-1/3 flex items-center rounded-xl">
             Förderung der Integration in die deutsche Gesellschaft unter
             Bewahrung der arabisch-islamischen Kultur unter Berücksichtigung der

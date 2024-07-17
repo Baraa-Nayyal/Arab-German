@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <div id="sec7" className="h-fit  relative pb-24">
       <div className="twoOverlay h-full w-full absolute z-10"></div>
-      <div className="z-20 relative mx-auto py-10">
+      <div className="z-20 relative mx-auto pt-32">
         <h1 className="mt-0  text-center  block ">Kontakt</h1>
         <form
           ref={form}
@@ -129,7 +129,6 @@ const Contact = () => {
             </Button>
           </div>
         </form>
-    
       </div>
     </div>
   );

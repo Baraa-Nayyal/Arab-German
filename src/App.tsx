@@ -10,14 +10,16 @@ import Contact from "./pages/Contact";
 import ToastContainer from "./hooks/ToastContainer";
 import Footer from "./pages/Footer";
 import Gallary from "./pages/Gallary";
+import MainLayout from "./layout/MainLayout";
+import { Route, Routes } from "react-router-dom";
+import Map from "./pages/Map";
 
-function App() {
+const Pages = () => {
   return (
     <>
       <div className="relative">
         <ToastContainer />
       </div>
-      <Navbar />
       <Home />
       <About />
       <Gallary />
@@ -27,7 +29,81 @@ function App() {
       <Section6 />
       <Section7 />
       <Contact />
-      <Footer />
+      <Map />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <Pages />
+            </MainLayout>
+          }
+        />
+
+        {/* <Route
+          path="/Startseite"
+          element={
+            <MainLayout>
+              <Home />
+            </MainLayout>
+          }
+        /> */}
+        <Route
+          path="/Veranstaltungen"
+          element={
+            <MainLayout>
+              <About />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/Galerie"
+          element={
+            <MainLayout>
+              <Gallary />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/Ziele"
+          element={
+            <MainLayout>
+              <Section3 />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/Aktivitäten"
+          element={
+            <MainLayout>
+              <Section4 />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/Mitgliedschaft"
+          element={
+            <MainLayout>
+              <Section5 />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/Kontakt"
+          element={
+            <MainLayout>
+              <Contact />
+            </MainLayout>
+          }
+        />
+      </Routes>
     </>
   );
 }

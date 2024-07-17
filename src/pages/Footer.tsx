@@ -4,9 +4,7 @@ import NavLinks from "../components/NavLinks";
 const Footer = () => {
   return (
     <>
-      <div className="w-full -mb-2">
-        <img className="w-full" src="/map.png" />
-      </div>
+     
       <div className="flex flex-col lg:flex-row  justify-center lg:justify-between items-center px-24 gap-10 lg:gap-16 footer text-white py-10">
         <div className="w-auto lg:w-[30%]">
           <span className="block font-bold text-center lg:text-left text-[24px] lg:text-[32px] text-white">

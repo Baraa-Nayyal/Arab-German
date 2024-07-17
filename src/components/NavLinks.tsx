@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const NavLinks = ({
   mode,
@@ -10,6 +11,7 @@ const NavLinks = ({
   toggle?: () => void;
 }) => {
   const [activeHash, setActiveHash] = useState(window.location.hash);
+  const navigate = useNavigate();
 
   const scrollToSection = (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -22,6 +24,8 @@ const NavLinks = ({
 
     event.preventDefault();
     setActiveHash(hash);
+    navigate(`/${hash}`); // Navigate to the root with the hash
+
     const element = document.querySelector(hash);
     if (element) {
       const offsetTop =
@@ -54,72 +58,17 @@ const NavLinks = ({
   }, []);
   return (
     <>
-      <a
-        className={`cursor-pointer ${
-          mode === "footer" ? "text-white" : "text-black"
-        } ${
-          isMobileScreen &&
-          "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
-        }  ${activeHash === "#home" ? "font-bold underline active" : ""}`}
-        onClick={(event) => scrollToSection(event, "#home", 0)}
+      {/* <NavLink
+        className={({ isActive }) =>
+          `cursor-pointer ${mode === "footer" ? "text-white" : "text-black"} ${
+            isMobileScreen && "navLink"
+          } `
+        }
+        to="/"
       >
         Startseite
-      </a>
-      <a
-        className={`cursor-pointer ${
-          mode === "footer" ? "text-white" : "text-black"
-        }  ${
-          isMobileScreen &&
-          "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
-        } ${activeHash === "#sec2" ? "font-bold underline active" : ""}`}
-        onClick={(event) => scrollToSection(event, "#sec2", 100)}
-      >
-        Veranstaltungen
-      </a>
-      <a
-        className={`cursor-pointer ${
-          mode === "footer" ? "text-white" : "text-black"
-        }  ${
-          isMobileScreen &&
-          "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
-        }  ${activeHash === "#sec8" ? "font-bold underline active" : ""}`}
-        onClick={(event) => scrollToSection(event, "#sec8", 300)}
-      >
-        Galerie
-      </a>
-      <a
-        className={`cursor-pointer ${
-          mode === "footer" ? "text-white" : "text-black"
-        }  ${
-          isMobileScreen &&
-          "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
-        }  ${activeHash === "#sec3" ? "font-bold underline active" : ""}`}
-        onClick={(event) => scrollToSection(event, "#sec3", 0)}
-      >
-        Ziele
-      </a>
-      <a
-        className={`cursor-pointer ${
-          mode === "footer" ? "text-white" : "text-black"
-        }  ${
-          isMobileScreen &&
-          "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
-        } ${activeHash === "#sec4" ? "font-bold underline active" : ""}`}
-        onClick={(event) => scrollToSection(event, "#sec4", 100)}
-      >
-        Aktivitäten
-      </a>
-      <a
-        className={`cursor-pointer ${
-          mode === "footer" ? "text-white" : "text-black"
-        }  ${
-          isMobileScreen &&
-          "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
-        }  ${activeHash === "#sec5" ? "font-bold underline active" : ""}`}
-        onClick={(event) => scrollToSection(event, "#sec5", 0)}
-      >
-        Mitgliedschaft
-      </a>
+      </NavLink> */}
+
       <a
         className={`cursor-pointer ${
           mode === "footer" ? "text-white" : "text-black"
@@ -127,21 +76,72 @@ const NavLinks = ({
           isMobileScreen &&
           "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
         }  ${activeHash === "#sec6" ? "font-bold underline active" : ""}`}
-        onClick={(event) => scrollToSection(event, "#sec6", 100)}
+        onClick={(event) => scrollToSection(event, "#home", 100)}
       >
-        Finanzierung
+        Startseite
       </a>
-      <a
-        className={`cursor-pointer ${
-          mode === "footer" ? "text-white" : "text-black"
-        }  ${
-          isMobileScreen &&
-          "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
-        }  ${activeHash === "#sec7" ? "font-bold underline active" : ""}`}
-        onClick={(event) => scrollToSection(event, "#sec7", 100)}
+
+      <NavLink
+        className={({ isActive }) =>
+          `cursor-pointer ${mode === "footer" ? "text-white" : "text-black"} ${
+            isMobileScreen && "navLink"
+          } ${isActive ? "underline font-bold" : ""}`
+        }
+        to="/Veranstaltungen"
+      >
+        Veranstaltungen
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `cursor-pointer ${mode === "footer" ? "text-white" : "text-black"} ${
+            isMobileScreen && "navLink"
+          } ${isActive ? "underline font-bold" : ""}`
+        }
+        to="/Galerie"
+      >
+        Galerie
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `cursor-pointer ${mode === "footer" ? "text-white" : "text-black"} ${
+            isMobileScreen && "navLink"
+          } ${isActive ? "underline font-bold" : ""}`
+        }
+        to="/Ziele"
+      >
+        Ziele
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `cursor-pointer ${mode === "footer" ? "text-white" : "text-black"} ${
+            isMobileScreen && "navLink"
+          } ${isActive ? "underline font-bold" : ""}`
+        }
+        to="/Aktivitäten"
+      >
+        Aktivitäten
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `cursor-pointer ${mode === "footer" ? "text-white" : "text-black"} ${
+            isMobileScreen && "navLink"
+          } ${isActive ? "underline font-bold" : ""}`
+        }
+        to="/Mitgliedschaft"
+      >
+        Mitgliedschaft
+      </NavLink>
+
+      <NavLink
+        className={({ isActive }) =>
+          `cursor-pointer ${mode === "footer" ? "text-white" : "text-black"} ${
+            isMobileScreen && "navLink"
+          } ${isActive ? "underline font-bold" : ""}`
+        }
+        to="/Kontakt"
       >
         Kontakt
-      </a>
+      </NavLink>
     </>
   );
 };
