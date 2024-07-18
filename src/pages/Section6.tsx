@@ -1,4 +1,9 @@
+import React from "react";
+
 const Section6 = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="h-[50vh] relative flex justify-center items-center">
       <div className="twoOverlay h-full w-full absolute z-10"></div>

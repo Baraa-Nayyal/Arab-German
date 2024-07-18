@@ -26,7 +26,9 @@ function TabPanel(props: any) {
 
 const About = () => {
   const [value, setValue] = React.useState(0);
-
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
@@ -75,7 +77,7 @@ const About = () => {
 
   return (
     <div id="sec2" className="h-fit relative">
-      <div className="bg-[#FDFCDC] w-full h-full absolute -z-10"></div>
+      <div className="bg-primary w-full h-full absolute -z-10"></div>
       <div className="py-20">
         <div className="flex justify-center">
           <h2 className="inline text-center my-10">
@@ -154,7 +156,6 @@ const About = () => {
               <div className="text-balance mb-1 block">
                 {/* autoplay={{ delay: 1500 }} */}
                 <Swiper
-                  style={{ cursor: "grab" }}
                   loop={true}
                   spaceBetween={10}
                   slidesPerView={1}
@@ -163,10 +164,10 @@ const About = () => {
                   scrollbar={{ draggable: false }}
                   modules={[Pagination, Navigation, Scrollbar, Autoplay]}
                 >
-                  {contentArray.map((item) => (
-                    <SwiperSlide key={item.id} className="mb-10">
-                      <div className="flex text-center bg-[#50b9c31f] transition-all p-2 hover:bg-[#50b9c370] border-solid border-[#50B9C3] rounded-xl max-sm:text-sm mx-10 flex-col justify-center items-center">
-                        <p>
+                  <SwiperSlide className="mb-10">
+                    <div className="flex text-center h-[200px] bg-[#50b9c31f] transition-all p-2 hover:bg-[#50b9c370] border-solid border-[#50B9C3] rounded-xl max-sm:text-sm mx-10 flex-col justify-center items-center">
+                      Keine neue Veranstaltungen
+                      {/* <p>
                           {item.title}
                           {item.description}
                         </p>
@@ -181,10 +182,9 @@ const About = () => {
                             {item.venue.city}
                           </span>
                         </div>
-                        <p className="text-balance">{item.invitation}</p>
-                      </div>
-                    </SwiperSlide>
-                  ))}
+                        <p className="text-balance">{item.invitation}</p> */}
+                    </div>
+                  </SwiperSlide>
                 </Swiper>
               </div>
             </TabPanel>

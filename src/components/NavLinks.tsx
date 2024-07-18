@@ -74,7 +74,7 @@ const NavLinks = ({
           mode === "footer" ? "text-white" : "text-black"
         }  ${
           isMobileScreen &&
-          "border-[#219dbc] border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
+          "border-secondary border-solid  border-t-0 border-r-0 border-l-0 border-b-2 pb-5 w-full text-center "
         }  ${activeHash === "#sec6" ? "font-bold underline active" : ""}`}
         onClick={(event) => scrollToSection(event, "#home", 100)}
       >

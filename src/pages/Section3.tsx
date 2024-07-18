@@ -1,6 +1,11 @@
+import React from "react";
 import "./style.css";
 
 const Section3 = () => {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div
       id="sec3"
@@ -18,16 +23,16 @@ const Section3 = () => {
           </p>
         </div>
         <div className="flex flex-col gap-4 mx-10 text-center lg:flex-row lg:justify-between pb-24">
-          <p className="transition-all bg-[#fdfcdc70] hover:bg-[#FDFCDC] my-1 font-bold  lg:text-xl p-8 w-full lg:w-1/3 flex items-center rounded-xl">
+          <p className="transition-all bg-[#fdfcdc70] hover:bg-primary my-1 font-bold  lg:text-xl p-8 w-full lg:w-1/3 flex items-center rounded-xl">
             Förderung der Integration in die deutsche Gesellschaft unter
             Bewahrung der arabisch-islamischen Kultur unter Berücksichtigung der
             multikulturellen deutschen Gesellschaft.
           </p>
-          <p className="transition-all bg-[#fdfcdc70] hover:bg-[#FDFCDC]  my-1 font-bold  lg:text-xl p-8 w-full lg:w-1/3 flex items-center rounded-xl">
+          <p className="transition-all bg-[#fdfcdc70] hover:bg-primary  my-1 font-bold  lg:text-xl p-8 w-full lg:w-1/3 flex items-center rounded-xl">
             Förderung von Kennenlernen und Zusammenarbeit zwischen Mitgliedern
             der Gemeinschaft.
           </p>
-          <p className="transition-all bg-[#fdfcdc70] hover:bg-[#FDFCDC]  my-1 font-bold  lg:text-xl p-8 w-full lg:w-1/3 flex items-center rounded-xl">
+          <p className="transition-all bg-[#fdfcdc70] hover:bg-primary  my-1 font-bold  lg:text-xl p-8 w-full lg:w-1/3 flex items-center rounded-xl">
             Sensibilisierung für die Gefahren von Rassismus und Extremismus in
             all seinen Formen.
           </p>

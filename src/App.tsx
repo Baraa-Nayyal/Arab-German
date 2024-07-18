@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import About from "./pages/About";
+import About from "./pages/Events";
 import Home from "./pages/Home";
 import Section3 from "./pages/Section3";
 import Section4 from "./pages/Section4";
@@ -13,10 +13,11 @@ import Gallary from "./pages/Gallary";
 import MainLayout from "./layout/MainLayout";
 import { Route, Routes } from "react-router-dom";
 import Map from "./pages/Map";
+import GallaryFull from "./pages/GallaryFull";
 
 const Pages = () => {
   return (
-    <>
+    <div id="homePage">
       <div className="relative">
         <ToastContainer />
       </div>
@@ -30,7 +31,7 @@ const Pages = () => {
       <Section7 />
       <Contact />
       <Map />
-    </>
+    </div>
   );
 };
 
@@ -67,7 +68,7 @@ function App() {
           path="/Galerie"
           element={
             <MainLayout>
-              <Gallary />
+              <GallaryFull />
             </MainLayout>
           }
         />

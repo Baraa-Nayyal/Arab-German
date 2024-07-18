@@ -1,3 +1,5 @@
+import React from "react";
+
 const Card = ({ imageUrl, text }: { imageUrl: string; text: string }) => {
   return (
     <>
@@ -12,6 +14,10 @@ const Card = ({ imageUrl, text }: { imageUrl: string; text: string }) => {
 };
 
 const Section5 = () => {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div id="sec5" className="h-full md:h-[100vh] relative flex items-center py-24">
       <div className="twoOverlay h-full w-full absolute z-10"></div>

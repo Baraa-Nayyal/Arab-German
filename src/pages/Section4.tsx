@@ -1,3 +1,5 @@
+import React from "react";
+
 const Card = ({ imageUrl, text }: { imageUrl: string; text: string }) => {
   return (
     <>
@@ -11,9 +13,13 @@ const Card = ({ imageUrl, text }: { imageUrl: string; text: string }) => {
   );
 };
 const Section4 = () => {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div id="sec4" className="h-fit relative text-center">
-      <div className="bg-[#FDFCDC] w-full h-full absolute -z-10"></div>
+      <div className="bg-primary w-full h-full absolute -z-10"></div>
       <div className="pt-24 pb-12">
         <h1 className="inline-block mb-10 mx-2 text-xl md:text-[30px]">
           Diese Ziele werden durch Folgendes erreicht:

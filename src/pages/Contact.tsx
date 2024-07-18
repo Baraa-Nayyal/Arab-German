@@ -55,7 +55,7 @@ const Contact = () => {
         >
           <div>
             <label className="block">
-              Vorname <span className="text-[#219dbc]">*</span>
+              Vorname <span className="text-secondary">*</span>
             </label>
             <TextField
               required
@@ -66,7 +66,7 @@ const Contact = () => {
           </div>
           <div>
             <label className="block">
-              Nachname <span className="text-[#219dbc]">*</span>
+              Nachname <span className="text-secondary">*</span>
             </label>
             <TextField
               required
@@ -77,7 +77,7 @@ const Contact = () => {
           </div>
           <div>
             <label className="block">
-              E-Mail <span className="text-[#219dbc]">*</span>
+              E-Mail <span className="text-secondary">*</span>
             </label>
             <TextField
               required
@@ -89,7 +89,7 @@ const Contact = () => {
           </div>
           <div>
             <label className="block">
-              Telefon <span className="text-[#219dbc]">*</span>
+              Telefon <span className="text-secondary">*</span>
             </label>
             <TextField
               type="number"
@@ -101,7 +101,7 @@ const Contact = () => {
           </div>
           <div className="col-span-2">
             <label className="block">
-              Nachricht <span className="text-[#219dbc]">*</span>
+              Nachricht <span className="text-secondary">*</span>
             </label>
             <TextField
               required

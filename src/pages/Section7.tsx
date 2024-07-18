@@ -1,9 +1,14 @@
+import React from "react";
+
 const Section7 = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div id="sec6" className="h-fit relative text-center">
-      <div className="bg-[#FDFCDC] w-full h-full absolute -z-10"></div>
+      <div className="bg-primary w-full h-full absolute -z-10"></div>
       {/* map */}
-      
+
       {/* text */}
       <div className="flex flex-col md:flex-row justify-around w-full pb-10 px-10">
         <div className="text-center md:text-left py-10">

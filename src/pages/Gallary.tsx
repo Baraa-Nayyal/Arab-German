@@ -1,4 +1,6 @@
+import { Button } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -6,10 +8,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 const Card = () => {
   return (
-    <div id="sec8" className="max-w-sm mx-auto z-20 ">
-      <div className="bg-[#FDFCDC] shadow-md rounded-lg overflow-hidden">
+    <div id="sec8" className="max-w-sm mx-auto z-20">
+      <div className="bg-primary shadow-md rounded-lg overflow-hidden">
         <img
           className="w-full h-56 object-cover"
           src="/about3.png"
@@ -74,6 +77,14 @@ const Gallary = () => {
                 <Card />
               </SwiperSlide>
             </Swiper>
+            <Link to={"/Galerie"}>
+              <Button
+                size="small"
+                className=" mx-auto w-[20%] flex justify-center mb-2 bg-secondary hover:bg-[#3f8da0] text-white font-bold py-2 px-4 rounded mt-2"
+              >
+                Mehr
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

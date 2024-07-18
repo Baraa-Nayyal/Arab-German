@@ -4,22 +4,25 @@ import "./style.css";
 const Home = () => {
   return (
     <>
-      <div id="home" className="h-[100vh] flex justify-center flex-col gap-24 container mx-auto px-4 items-center">
+      <div
+        id="home"
+        className="h-[100vh] flex justify-center flex-col gap-24 container mx-auto px-4 items-center"
+      >
         <div className="overlay" />
         <div className="bgHero bg " />
         <div className="flex flex-col z-20  justify-center items-center text-center mx-3">
-          <span className="text-[#FDFCDC] text-[30px] sm:text-[50px] font-bold">
+          <span className="text-primary text-[30px] sm:text-[50px] font-bold">
             Die Deutsch-Arabische
           </span>
-          <span className="text-[#FDFCDC] text-[30px] sm:text-[50px] font-bold tracking-[13px] sm:tracking-[21px] ml-[17px]">
+          <span className="text-primary text-[30px] sm:text-[50px] font-bold tracking-[13px] sm:tracking-[21px] ml-[17px]">
             Gemeinschaft
           </span>
-          <p className="text-[#FDFCDC] text-lg text-pretty sm:text-xl">
+          <p className="text-primary text-lg text-pretty sm:text-xl">
             Hier finden Sie Informationen über uns und unsere Aktivitäten
           </p>
         </div>
         <div className="flex justify-center items-center z-20 relative bottom-0 gap-3">
-          <IconButton className="bg-[#219dbc] w-10 h-10 hover:bg-[#2e92ab]">
+          <IconButton className="bg-secondary w-10 h-10 hover:bg-[#2e92ab]">
             <svg
               width="28"
               height="28"

@@ -20,7 +20,7 @@ function Navbar() {
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setBgColor("bg-[#FDFCDC]"); // Change to your desired background color
+      setBgColor("bg-primary");
     } else {
       setBgColor("bg-transparent");
     }
@@ -53,7 +53,7 @@ function Navbar() {
         {/* Burger Btn */}
         <div className="lg:hidden px-3 relative z-50 flex justify-between items-center ">
           <button
-            className="rounded-fullp-2 flex justify-center items-center rounded-full text-sm bg-[#FDFCDC] w-10 h-10 text-[#219dbc]"
+            className="rounded-fullp-2 flex justify-center items-center rounded-full text-sm bg-primary w-10 h-10 text-secondary"
             onClick={toggleNav}
           >
             {isOpen ? <X /> : <Menu />}
